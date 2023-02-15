@@ -21,8 +21,8 @@ function handleClick(event) {
 export default function SingleProduct(){
     const product = "Helem KYT";
     const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/" onClick={handleClick}>
-          Home
+        <Link key="1" color="inherit" href="/">
+        Home
         </Link>,
         <Link
           underline="hover"
