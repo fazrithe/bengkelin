@@ -1,4 +1,4 @@
-import SingleProduct from "../../components/product/singleProduct";
+import SingleProduct from "../../components/product/SingleProduct";
 import { useState, useEffect } from 'react';
 
 export default function Single({id}){
