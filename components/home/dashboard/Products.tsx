@@ -26,7 +26,7 @@ export default function Products(){
       <Grid item xs={6} sm={2}>
         <Link 
         href="/product/[name]" 
-        as={`/product/Helm`}
+        as={`/product/HelemKYT`}
         >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>

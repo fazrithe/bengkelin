@@ -12,14 +12,20 @@ import Detail from './items/Detail';
 import BuyProduct from './items/BuyProduct';
 import BuyProductMobile from './items/BuyProductMobile';
 import GalleryProduct from './items/GalleryProduct'
+import { NextPage } from 'next';
 
-function handleClick(event) {
+function handleClick(event: React.SyntheticEvent) {
     event.preventDefault();
     console.info('You clicked a breadcrumb.');
   }
 
-export default function SingleProduct(){
-    const product = "Helem KYT";
+interface Props {
+    product:any;
+}
+  
+const SingleProduct: NextPage<Props> = (props) => {
+  
+    const {product} = props;
     const breadcrumbs = [
         <Link key="1" color="inherit" href="/">
         Home
@@ -68,3 +74,5 @@ export default function SingleProduct(){
             </Container></div>
     );
 }
+
+export default SingleProduct;
