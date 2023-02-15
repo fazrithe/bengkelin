@@ -18,8 +18,8 @@ function handleClick(event) {
     console.info('You clicked a breadcrumb.');
   }
 
-export default function SingleProduct(props){
-    const product = props?.product;
+export default function SingleProduct(){
+    const product = "Helem KYT";
     const breadcrumbs = [
         <Link underline="hover" key="1" color="inherit" href="/" onClick={handleClick}>
           Home

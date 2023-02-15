@@ -9,7 +9,7 @@ export default function Single({id}){
     }, []);
     return (
         <div>
-            <SingleProduct product={product} />
+            <SingleProduct/>
         </div>
     );
 }
